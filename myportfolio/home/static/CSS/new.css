@@ -1,0 +1,559 @@
+/* W Can Use Automatic changed imag from unplash.com*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,300;1,300&family=Source+Code+Pro&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/*
+font-family: 'Press Start 2P', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Code Pro', monospace;
+font-family: 'Ubuntu', sans-serif;
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#thanks{
+    font-size: 30px;
+    padding: 10px;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    
+}
+.logo{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+}
+.logo-text{
+    width: 50%;
+    color: white;
+}
+#ri{
+    font-size: 30px;
+    font-family: cursive;
+    color: aquamarine;
+}
+#y{
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: red;
+}
+#ad{
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 600;
+    color: rgba(0, 255, 255, 0.722);
+}
+.logo img{
+    width: 30px;
+    border: 2px solid white;
+    border-radius:50px;
+}
+.nav-list{
+    
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+}
+.nav-list li{
+    list-style: none;
+    padding: 24px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: wheat;
+    font-size: 16px;
+    font-family: bold;
+    font-family: 'Press Start 2P', cursive;
+}
+.nav-list li a:hover{  
+    color: gray;
+}
+.rigthnav{
+    width: 30%;
+    text-align: right;
+    padding: 0 23px;
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid black;
+    border-radius: 7px;
+    background: transparent;
+    border: 1px solid white;
+}
+.Dropdown{
+    position: relative;
+    display: flex;
+}
+.DrBtn{
+    background-color: transparent;
+    color: wheat;
+    border: none;
+    font-size: 16px;
+    font-family: auto;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+}
+.DrList{
+    position: absolute;
+    background: rgb(43, 40, 40);
+    background-blend-mode: darken;
+    transition: all 1s ease-in;
+    margin-top: 2rem;
+   
+}
+.nav-bg{
+    background: rgb(0, 0, 0, 0.7) url('../img/bg2.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.backgroud{
+    background: rgb(0, 0, 0, 0.7) url('../img/back.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.main-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+.auto-type{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    color: wheat;
+}
+#FB{
+    font-size: 25px;
+    font-family: 'Press Start 2P', cursive;
+}
+#SB{
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;
+}
+.firstsection{
+    height: 80vh;
+}
+.firsthalf{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.secondhalf{
+ width: 30%;
+}
+.secondhalf img{
+    width: 100%;
+    border: 4px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+.hello {
+    font-size: 60px;
+    color: white;
+}
+.name {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+.about {
+    font-size: 40px;
+    color: white;
+}
+
+.aboutmore {
+    font-size: 22px;
+    margin-top: 4px;
+    color: white;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 8px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+    border-radius: 7px;
+    background: none;
+    color: white;
+    background-color: green;
+}
+.btn-dark{
+    background-color: green;
+    color: black;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+.service{
+  
+    padding: 20px 0;
+    
+}
+.service h1{
+    text-align: center;
+    font-size: 35px;
+    text-decoration: underline;
+}
+.allsec{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 30%;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+/*.section-left{
+    flex-direction: column-reverse;
+}*/
+.paras{
+    padding: 0 65px;
+}
+.tumbnail img{
+    margin: 25px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+.sectag{
+    padding: 0px 40px;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+}
+.secsubtag{
+    padding: 0px 40px;
+    font-size: 20px;
+    margin: 5px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.p-heading{
+    text-align: center;
+    font-size: 30px;
+    font-style: initial;
+    font-family: cursive;
+}
+.line-h{
+    width: 30%;
+    height: 5px;
+    background-color: black;
+    margin: auto;
+}
+.plans{
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px auto;
+}
+.plan{
+    width: 30.3%;
+    height: 70vh;
+    padding: 10px 10px;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+.plan:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer; 
+    width: 32%; 
+    height: 77vh;
+    transition: all 1s ;
+    border: 2px solid black;
+}
+.p-big{
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.p-sm{
+    font-size: 25px;
+    font-weight: 700;
+}
+.p-list{
+    padding: 5px 20px;
+    font-size: 18px;
+}
+.p-de{
+    font-size: 20px;
+    padding: 5px 0;
+}
+.p-de span{
+    font-size: 25px;
+}
+.p-price{
+    font-size: 20px;
+    padding: 5px 0;
+}
+.p-price span{
+    font-size: 30px;
+}
+.p-skills{
+    font-size: 20px;
+    color: red;
+}
+.p-skills span{
+    font-size: 30px;
+    color: white;
+}
+.p-details{
+    font-size: 30px;
+    padding: 10px;
+}
+.p-btn{
+    width: 50%;
+    height: 2rem;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin: 15px 90px;
+    background: black;
+    color: white;
+    border: 2px solid wheat;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.p-btn:hover{
+    background: black;
+    color: white;
+}
+
+.contact{
+    background-color: rgb(215 209 209);
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.text-center{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.ft-bg{
+    background-color: white;
+}
+.text-footer{
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Courier New', Courier, monospace;
+    display:flex;
+    justify-content: center;
+    color: black;
+    font-size: 18px;
+}
+
+.about-text{
+    text-align: center;
+}
+.ab-btn{
+    width: 50%;
+    padding: 0.5rem;
+    margin: 0 4.7rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.ab-btn:hover{
+    background: black;
+    color: white;
+}
+.last-item{
+    width: 50%;
+    margin-top: .5rem;
+}
+.last-about{
+    text-align: center;
+    width: 80%;
+    padding: 10px 10px;
+    border-right: 1px solid darkgray;
+}
+.about-info{
+    padding: 10px 10px;
+    border-left: 1px solid darkgray;
+}
+.info-text{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Source Code Pro';
+}
+.s-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+.s-icon img{
+    width: 40px;
+    height: 40px;
+    margin-right: 1.5rem;
+}
+.last-part{
+    display: flex;
+    width: 100%;
+    color: white;
+    margin: auto;
+    justify-content: space-evenly;
+   
+}
+
+.form{
+    max-width: 50%;
+    margin: auto;
+}
+.form-input{
+    width: 100%;
+    margin: 14px 0;
+    padding: 5px 3px;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 6px;
+}
+/*#textarea{
+    width: 390px; 
+    height: 72px;
+}*/
+.burgar{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width: 30px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+@media screen and (max-width: 1140px) {
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.3s ease-in;
+        height: 447px;
+    }
+    .logo{
+        position: absolute;
+        top: 1rem;
+        left: 5%;
+        width: 50%;
+        justify-content: space-evenly;
+    }
+    .rigthnav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burgar{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .firstsection{
+        height: auto;
+    }
+    .main-box{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .allsec{
+        flex-direction: column;
+    }
+   .section{
+    flex-direction: column-reverse;
+   }
+   .text-big{
+    text-align: center;
+   } 
+   .text-sm{
+    text-align: center;
+   }
+   .buttons{
+    text-align: center;
+   }
+   .paras{
+    padding: 0;
+   }
+   .plans{
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+   }
+   .plan{
+    text-align: center;
+    width: 90%;
+   }
+   
+   .p-btn{
+    margin: 15px 0;
+   }
+   .last-part{
+    flex-direction: column;
+    align-items: center;
+   }
+   .last-item{
+    width: 100%;
+   }
+   .last-about{
+    border-right: none;
+   }
+   .about-info{
+    border-left: none;
+   }
+   .underline{
+    text-decoration: underline;
+   }
+}

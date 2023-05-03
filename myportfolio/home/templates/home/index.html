@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="static/CSS/new.css">
+    <title>NEWSITE</title>
+    <style>
+        .payment-p {
+            width: 300px;
+            height: 400px;
+            background-color: white;
+            position: absolute;
+            top: 100rem;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            display: none;
+            margin: auto;
+            padding: 10px 50px;
+            flex-direction: column;
+            -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.7);
+        }
+
+        .pay-text {
+            font-size: 25px;
+            padding: 10px;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .pay-text span {
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .pay-btn {
+            width: 50%;
+            height: 2rem;
+            text-align: center;
+            margin: 5px 25%;
+            background: black;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: cursive;
+            cursor: pointer;
+        }
+
+        .close {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-color: gray;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            padding: 5px;
+        }
+        @media screen and (max-width: 1140px) {
+            .plan:hover{
+                width: auto;
+            }
+            .plan{
+                height: 110vh;
+            }
+            .payment-p{
+                background-color: black;
+                color: white;
+                position: fixed;
+                top: 0;
+                width: auto;
+                height: 500px;
+                text-align: center;
+            }
+            .tumbnail img{
+                width: 200px;
+            }
+            .last-about{
+                width: 90%;
+            }
+            .last-item{
+                width: 90%;
+            }
+            .text-footer{
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar nav-bg h-nav-resp">
+        <div class="logo">
+            <h1 class="logo-text"><span id="ri">.RI</span><span id="y">Y</span><span id="ad">AD</span></h1>
+            <img src="/static/img/me.jpg" alt="Looding...">
+        </div>
+        <ul class="nav-list v-class-resp">
+            <li><a href="#home">_Home</a></li>
+            <li><a href="#about">_About</a></li>
+
+            <li><a href="#plan">_OurPlan</a></li>
+            <li><a href="#contact">_ContactUs</a></li>
+            <div class="Dropdown">
+                <button class="DrBtn">Service</button>
+                <div class="DrList backgroud">
+                    <li><a href="#design">_WebDesign</a></li>
+                    <li><a href="#develop">_WebDevelop</a></li>
+                    <li><a href="#degital">_GoogleAds</a></li>
+                </div>
+            </div>
+
+        </ul>
+        <div class="rigthnav v-class-resp">
+            <input type="text" name="search" id="search" placeholder="Search..">
+            <button class="btn-sm">Search</button>
+        </div>
+        <!--Hambar-->
+        <div class="burgar">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section class="backgroud firstsection" id="home">
+        <div class="main-box">
+            <div class="firsthalf">
+                <div><span id="FB">{"</span><span class="auto-type"></span><span id="SB">"}</span></div>
+                <div class="hello">Hi I AM</div>
+                <div class="name">RIYAD</div>
+                <div class="about">Web Developer, Digital Marketer</div>
+                <div class="aboutmore">I Am Full Stack Developer And Google Ads Expert</div>
+                <div class="buttons">
+                    <button class="btn">Contact Me</button>
+                </div>
+            </div>
+            <div class="secondhalf">
+                <img src="/static/img/me.jpg" alt="load">
+            </div>
+        </div>
+    </section>
+    <div class="service">
+        <h1>Our Service</h1>
+    </div>
+    <div class="allsec" id="service">
+        <section class="section" id="design">
+            <div class="paras">
+                <p class="sectag text-big">WEB DESIGNING</p>
+                <p class="secsubtag text-sm">We Are Expart on Web design.We Using HTML, CSS, JAVASCRIPT,REACT-JS</p>
+            </div>
+            <div class="tumbnail">
+                <img src="/static/img/design.png" alt="load.." class="imgfluid">
+            </div>
+        </section>
+        <section class="section section-left" id="develop">
+            <div class="paras">
+                <p class="sectag text-big">Web Developer</p>
+                <p class="secsubtag text-sm">We Are Expart on Web Developing.We Using PYTHON(Django, Flask) Next-JS, PHP
+                </p>
+            </div>
+            <div class="tumbnail">
+                <img src="/static/img/develop.png" alt="load.." class="imgfluid">
+            </div>
+        </section>
+        <section class="section" id="digital">
+            <div class="paras">
+                <p class="sectag text-big">Digital Marketing</p>
+                <p class="secsubtag text-sm">We are Workinmg IN Digital Marketing, Social Media Marketing, GoogleAds,
+                    FacebookAds, InstragramAds All Social Media Ads</p>
+            </div>
+            <div class="tumbnail">
+                <img src="/static/img/Merkwting.png" alt="load.." class="imgfluid">
+            </div>
+        </section>
+    </div>
+    <div class="p-heading" id="plan">
+        <h2>Our Plan</h2>
+        <div class="line-h"></div>
+    </div>
+    <div class="pla">
+        <div class="plans">
+            <div class="plan">
+                <h1 class="p-big">Front-End Web Design</h1>
+                <p class="p-sm">About Design</p>
+                <p class="p-list">-Attractive Design<br>-100% Resposive<br>-Source Code<br>-Unlimited Revision</p>
+                <p class="p-de">Delivery Day: <span>3 Days</span></p>
+                <p class="p-price">Strarting From: <span>$40</span></p>
+                <p class="p-skills">Skills: <span>HTML, CSS, JavaScript, React-Js, Bootsrap</span></p>
+                <p class="p-sm">Note: Please Contact Us Befor Order....</p>
+                <button class="p-btn">Order Now</button>
+            </div>
+            <div class="plan">
+                <h1 class="p-big">Back-End Web Develop</h1>
+                <p class="p-sm">About Develop</p>
+                <p class="p-de">Delivery Day: <span>3 Days</span></p>
+                <p class="p-price">Strarting From: <span>$60</span></p>
+                <p class="p-skills">Skills: <span>Python, Next-Js, SQL, PHP</span></p>
+                <p class="p-sm">Note: Please Contact Us Befor Order....</p>
+                <button class="p-btn pay">Order Now</button>
+            </div>
+            <div class="plan">
+                <h1 class="p-big">Degital Merketing</h1>
+                <p class="p-sm">About Digital Merketing</p>
+                <p class="p-details">_Social Media Merketing</p>
+                <p class="p-de">Delivery Day: <span>2 Days</span></p>
+                <p class="p-price">Strarting From: <span>$10</span></p>
+
+                <p class="p-sm">Note: Please Contact Us Befor Order....</p>
+                <button class="p-btn pay-p">Order Now</button>
+
+            </div>
+            <div class="payment-p">
+                <h1>Payment Method</h1>
+                <p class="pay-text">We Are sorry.! <br>Unavailable To Payment Method<br>We Are Fixed It very
+                    soon..<br><span> Contact With Us For Discuss About ypur payment and project</span></p>
+
+                <button class="pay-btn">Buy Now</button>
+                <span class="close">X</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <section class="contact" id="contact">
+
+        <div class="contact-item">
+            <h2 class="text-center">Contact Us</h2>
+            <form action="/home/contact/" method="post" class="form">
+                {% csrf_token %}
+                <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your Name">
+                <input class="form-input" type="tel" name="phone" id="phone" placeholder="Enter Your Phone">
+                <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your Email">
+                <textarea name="text" id="textarea" cols="10" rows="5" class="form-input"
+                    placeholder="Write a massage"></textarea>
+                <button type="submit" class="btn btn-sm btn-dark">Submit</button>
+            </form>
+        </div>
+        <div class="last-part nav-bg" id="about">
+            <div class="last-item">
+                <div class="last-about">
+                    <h2 class="text-center underline">NewsLetter</h2>
+                    <p class="about-text">SubsCribe Our Channel Get all Latest Update From Us..</p>
+                    <input type="email" class="form-input" placeholder="Enter Your Email">
+                    <button class="ab-btn">SubsCribe</button>
+                </div>
+            </div>
+            <div class="last-item">
+                <div class="about-info">
+                    <h2 class="text-center underline">About Us</h2>
+                    <p class="info-text">We Are A Expet Team. We have 2 years Avg. experiece with Web design, Web
+                        develop and GoogleAds.</p>
+                    <p class="info-text">For More Details Please Contact With Us.<br>Thanks For Visited Our Website..
+                    </p>
+                    <div class="s-icon">
+                        <a href="https://www.facebook.com/link.is.erorr"><img src="/static/img/fb.png" alt="Fb-Icon"></a>
+                        <a href="#"><img style="background: white;" src="/static/img/instra.png" alt="InsTra-icon"></a>
+                        <a href="#"><img src="/static/img/tw.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="ft-bg">
+            <p class="text-footer">
+                Copyright &copy; 2023- www.riyad.com All rigths Reserved
+            </p>
+        </footer>
+    </section>
+    <script src="/static/JS/index.js"></script>
+    <script>
+        document.querySelector('.p-btn').addEventListener('click', () => {
+            document.querySelector('.payment-p').style.display = 'flex'
+        })  
+        document.querySelector('.pay').addEventListener('click', () =>{
+            document.querySelector('.payment-p').style.display = 'flex'
+        })
+        document.querySelector('.pay-p').addEventListener('click', () =>{
+            document.querySelector('.payment-p').style.display = 'flex'
+        })
+        document.querySelector('.close').addEventListener('click', ()=>{
+            document.querySelector('.payment-p').style.display = 'none'
+        })
+    </script>
+    <script>
+        {% if thank %}
+        alert('Thanks For Contacting with Us we will reply to you within few moment!');
+
+        document.location = '/home/';
+
+        {% endif %}
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["_Web Designer", "_Web Developer", "_Google Advertiser"],
+            typespeed: 220,
+            backSpeed: 200,
+            loop: true
+        })
+    </script>
+
+</body>
+
+</html>
